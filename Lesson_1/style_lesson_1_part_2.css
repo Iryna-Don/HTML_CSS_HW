@@ -1,0 +1,26 @@
+body{
+    background-color: cadetblue;
+    /*margin: 0;*/
+    /*padding: 0;*/
+}
+p{
+    background-color: limegreen;
+    width: 30%;
+    height: 100px;
+    /*margin: 50px;*/
+    /*margin-left: 50px;*/
+    /*margin-top: 150px;*/
+    /*margin-bottom: 70px;*/
+    /*margin-right: 200px;*/
+    /*margin: 20px 50px 90px 10px;*/
+    margin: 50px 10px;
+    padding-bottom: 25px;
+    /*display: inline;*/
+}
+span{
+    color: blue;
+
+    display: block;
+    width: 100px;
+    height: 200px;
+}
