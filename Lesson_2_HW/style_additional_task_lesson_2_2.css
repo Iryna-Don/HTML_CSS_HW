@@ -11,6 +11,10 @@ section{
     margin-right: 1vw;
     padding: 1vw;
     font-size: 9vw;
+    transition: transform 1s linear;
+}
+.card:hover{
+    transform: rotate3d(1.5, 1, 1, 90deg);
 }
 p{
     font-size: 3vw;
