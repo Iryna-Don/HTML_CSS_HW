@@ -1,0 +1,32 @@
+#wrapper{
+    display: flex;
+    justify-content: space-around;
+}
+.square{
+    background-color: #ffe3c4;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Rubik_Pixels{
+    font-family: 'Rubik Pixels', system-ui;
+}
+.Sedgwick_Ave_Display{
+    font-family: 'Sedgwick Ave Display', cursive;
+}
+.Dancing_Script{
+    font-family: 'Dancing Script', cursive;
+}
+.Fjalla_One{
+    font-family: 'Fjalla One', sans-serif;
+}
+.Sedgwick_Ave_Display{
+
+}
+.Indie_Flower{
+    font-family: 'Indie Flower', cursive;
+}
+
+

@@ -1,0 +1,31 @@
+body{
+    margin: 0;
+}
+header{
+    background-color: #216abb;
+    height: 20vh;
+}
+main{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2.5vh;
+    margin-bottom: 2.5vh;
+    height:50vh;
+
+}
+section{
+    background-color: #16457a;
+    width: 32vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+span{
+    color: #77abbe;
+    font-size: 5vh;
+    font-family: 'Open Sans', sans-serif;
+}
+footer{
+    background-color: #216abb;
+    height: 25vh;
+}
