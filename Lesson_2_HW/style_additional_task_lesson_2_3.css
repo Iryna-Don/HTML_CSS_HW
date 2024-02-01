@@ -1,0 +1,61 @@
+*{
+    font-family: 'Hind Siliguri', sans-serif;
+}
+body, section{
+    background-color: powderblue;
+}
+h1{
+    margin: 3vw;
+    font-size: 8vw;
+    text-align: center;
+}
+.colors{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-bottom: 2vw;
+}
+div{
+    font-size: 1.7vw;
+    text-align: center;
+    margin-right: 1vw;
+    width: 12vw;
+    height: 12vw;
+    box-shadow: -10px 7px 8px -2px rgba(0,42,137,0.75);
+    -webkit-box-shadow: -10px 7px 8px -2px rgba(0,42,137,0.75);
+    -moz-box-shadow: -10px 7px 8px -2px rgba(0,42,137,0.75);
+}
+.Black{
+    background-color: #000000;
+}
+.Red{
+    background-color: #FF0000;
+}
+.Green{
+    background-color: #00FF00;
+}
+.Blue{
+    background-color: #0000FF;
+}
+.Fuchsia{
+    background-color: #FF00FF;
+}
+.White{
+    background-color: #FFFFFF;
+}
+.Yellow{
+    background-color: #FFFF00;
+}
+.Purple{
+    background-color: #800080;
+}
+.Maroon{
+    background-color: #800000;
+}
+.Olive{
+    background-color: #808000;
+}
+.black{
+    color: black;
+}
