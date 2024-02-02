@@ -13,16 +13,18 @@ main{
     height:50vh;
 
 }
-section{
-    background-color: #16457a;
-    width: 32vw;
+header, section, footer{
     display: flex;
     justify-content: center;
     align-items: center;
 }
+section{
+    background-color: #16457a;
+    width: 32vw;
+}
 span{
     color: #77abbe;
-    font-size: 5vh;
+    font-size: 3.5vw;
     font-family: 'Open Sans', sans-serif;
 }
 footer{
