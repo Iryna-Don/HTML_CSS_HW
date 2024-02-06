@@ -1,0 +1,54 @@
+*{
+    font-family: 'Inter', sans-serif;
+    font-size: 45px;
+    margin: 0;
+}
+header, footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 22vh;
+}
+header{
+    background-color: #8D8484;
+}
+.content_1{
+    background-color: #776969;
+}
+.content_2{
+    background-color: #643030;
+}
+.content_3{
+    background-color: #441818;
+}
+.content_1, .content_2, .content_3{
+    height: 33.3%;
+}
+.spam_1{
+    background-color: #937575;
+}
+.spam_2{
+    background-color: #644C4C;
+}
+.spam_1, .spam_2{
+    height: 50%;
+}
+footer{
+    background-color: #BDBDBD;
+}
+main{
+    display: flex;
+    height: 56vh;
+    color: white;
+}
+.content{
+    width: 75%;
+}
+.spam{
+    width: 25%;
+}
+div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

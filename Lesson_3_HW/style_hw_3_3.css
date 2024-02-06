@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    text-align: center;
+    font-family: 'Protest Revolution', sans-serif;
+}
+body{
+    height: 100vh;
+}
+h1{
+    text-shadow: 4px 9px 2px rgba(0,0,0,0.27);
+    font-size: 7vh;
+    padding: 4vh;
+}
+p{
+    padding: 4vh;
+    font-size: 3vh;
+}
+section{
+    height: 50%;
+}
+.day{
+    background-image: url(https://img.freepik.com/free-photo/view-of-beautiful-sea_107420-95690.jpg?size=626&ext=jpg&ga=GA1.1.1676048053.1707253238&semt=ais);
+}
+.night{
+    color: cornsilk;
+    background-image: url(https://img.freepik.com/premium-photo/moon-over-the-sea-at-night-closeup-with-moonlight-path-in-the-style-of-moonlight_117406-5279.jpg?size=626&ext=jpg&ga=GA1.1.1676048053.1707253238&semt=ais);
+}
+.night>h1{
+    text-shadow: 4px 4px 2px rgba(255,255,255,0.6);
+}
+.day, .night{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
