@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ua">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
@@ -7,25 +7,32 @@
 </head>
 <body>
 <div class="wrapper">
-    <section>
-        <div><img src="" alt=""></div>
-        <input type="text">
-        <br>
-        <input type="text">
-        <br>
-        <button></button>
-        <span></span>
-        <div></div>
-        <span></span>
-        <p></p>
-    </section>
-    <section><span></span></section>
-    <section>
-        <div>
-            <img src="" alt="">
+    <section class="block-1">
+        <div><img class="insta" src="instagram.png" alt="instagram"></div>
+        <input name="username" type="text" placeholder="Номер телефону, ім'я користувача або ел. пошта" required">
+        <input name="password" type="password" placeholder="Пароль" required>
+        <button type="submit">Увійти</button>
+        <div class="or">
+            <div class="hr"><hr></div>
+            <div>АБО</div>
+            <div class="hr"><hr></div>
         </div>
-        <div>
-            <img src="" alt="">
+        <div class="facebook">
+            <span><a class="pointer" href="https://www.facebook.com/"><img src="facebook.png" alt="facebook icon"></a></span>
+            <span><a class="pointer" href="https://www.facebook.com/">Увійти через Facebook</a></span>
+        </div>
+        <span class="fb_password pointer">Забули пароль?</span>
+        <p class="fb_password">Ви також можете <a class="pointer">поскаржитися на контент, який, на вашу думку, порушує</a> вашої країни, не входячи в обліковий запис.</p>
+    </section>
+    <section class="block-2">
+        <span class="no_sign">Не маєте облікового запису?</span>
+        <span class="registration pointer">Зареєструйтеся</span>
+    </section>
+    <section class="block-3">
+        <span class="download">Завантажити додаток.</span>
+        <div class="logos">
+            <img class="google pointer" src="https://static.cdninstagram.com/rsrc.php/v3/yq/r/54pQonhlyEd.png" alt="download from Google Play">
+            <img class="microsoft pointer" src="https://static.cdninstagram.com/rsrc.php/v3/yx/r/0WRk16YTMoq.png" alt="logo Microsoft">
         </div>
     </section>
 </div>
