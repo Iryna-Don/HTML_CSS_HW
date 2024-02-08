@@ -62,12 +62,13 @@ h1{
 .section2{
     margin-top: 15vh;
     display: flex;
+    justify-content: space-between;
 }
 .section2 h2, .section3 h2, .section4 h2{
     color: var(--Gray-4, #BDBDBD);
     font-size: 64px;
     font-weight: 300;
-    margin-bottom: 5vh;
+    margin-bottom: 7vh;
 }
 .section2 p{
     color: #000;
@@ -76,7 +77,7 @@ h1{
     line-height: 25px; /* 156.25% */
 }
 .section2 img{
-    margin: 0 6.6vw;
+    margin-right: 10vw;
 }
 
 .section3, .section4{
