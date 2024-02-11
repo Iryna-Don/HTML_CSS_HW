@@ -1,0 +1,555 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+}
+body{
+    overflow-x: hidden;
+}
+.wrapper, header, .tab_panel, .financial_block, .news,
+.legal_entities_block{
+    background-color: #f8f8f8;
+}
+.tab_panel, .section_services-block,
+.international_business_block, .financial_block,
+.find_index_block, .news, .legal_entities_block,
+.online_service, footer{
+    padding-left: 9.375vw;
+    padding-right: 9.375vw;
+}
+header{
+    width: 100vw;
+    height: 10.42vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+nav{
+    box-shadow: 0.694vw 0.694vw 0.347vw 0 rgba(21,140,186,0.75);
+    -webkit-box-shadow: 0.694vw 0.694vw 0.347vw 0 rgba(21,140,186,0.75);
+    -moz-box-shadow: 0.694vw 0.694vw 0.347vw 0 rgba(21,140,186,0.75);    position: fixed;
+    display: flex;
+    align-items: center;
+    padding-left: 9.375vw;
+    width: 89vw;
+    height: 4vw;
+    background-color: #f8f8f8;
+    z-index: 100;
+    top: 0;
+    left: 0;
+}
+.logo{
+    width: 80vw;
+    margin-bottom: -4vw;
+}
+.logo img{
+    padding-left: 9.375vw;
+}
+p{
+    font-family: 'Open Sans', sans-serif;
+    color: #0E2F4B;
+    font-size: 1.11vw;
+    margin-bottom: 1vw;
+
+}
+h2{ font-size: 3.33vw;
+    font-style: normal;
+    font-weight: 700;
+    margin-bottom: 1vw;
+    /*text-shadow: 0.28vw 0.28vw 0.56vw rgba(0,0,0,0.6);*/
+}
+h3{
+    color: #0E2F4B;
+    font-size: 1.67vw;
+    font-weight: 700;
+}
+nav>a{
+    text-decoration: none;
+    color: #99A2AA;
+    font-size: 1.11vw;
+    margin-right: 2vw;
+}
+nav a:hover{
+    color: black;
+}
+
+.tab_panel{
+    /*background-color: #fec524;*/
+    background-image: url('https://www.ukrposhta.ua/laravel-filemanager/files/shares/planet_900x450.png');;
+    height: 33vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.tab_panel>div{
+    width: 37vw;
+}
+.tab_panel>div>h2{
+    color: #FFF;
+    font-size: 3.05vw;
+}
+input{
+    font-size: 1.11vw;
+    width: 100%;
+    height: 5vw;
+    border: none;
+    border-radius: 0.694vw;
+    background: #FFF;
+    box-shadow: 0 0.208vw 2.43vw 0 rgba(95, 98, 102, 0.17);
+    padding-left: 2vw;
+}
+input::placeholder{
+    color: #757575;
+    letter-spacing: 0.035vw;
+}
+input:focus::placeholder {
+    color: transparent;
+}
+input:focus{
+    outline: none;
+}
+.input-box {
+    position: relative;
+}
+
+.input-box>a {
+    position: absolute;
+    top: 1.7vw;
+    right: 0;
+    background: #fff;
+    font-size: 1.39vw;
+    font-weight: 700;
+    display: block;
+    text-decoration: none;
+    color: black;
+}
+.section_services-block{
+    position: relative;
+    height: 55.56vw;
+}
+.grid{
+    display: grid;
+    align-items: start;
+    justify-content: right;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+    'gr_1 gr_2 gr_5'
+    'gr_1 gr_3 gr_6'
+    'gr_1 gr_4 gr_7';
+    gap: 1.5vw;
+    padding-top: 7vw;
+}
+.grid_1, .grid_2, .grid_3, .grid_4, .grid_5, .grid_6,
+.grid_7, .card_financial_1, .card_financial_2,
+.card_financial_3, .tab_panel{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.grid_1{
+    grid-area: gr_1;
+}
+.grid_2 {
+    transition: 1.5s;
+    grid-area: gr_2;
+    background-image: url('https://img.freepik.com/free-photo/blue-smoke-collection-on-white-background_1112-1451.jpg?size=626&ext=jpg&ga=GA1.1.1676048053.1707253238&semt=ais');
+}
+.grid_2:hover{
+    transition: 1.5s;
+    background: linear-gradient( rgba(255, 255, 255, 0.8), rgba(169, 3, 252, 0.6) ), url('https://img.freepik.com/free-photo/blue-smoke-collection-on-white-background_1112-1451.jpg?size=626&ext=jpg&ga=GA1.1.1676048053.1707253238&semt=ais');
+}
+.grid_3{
+    transition: 1.5s;
+    grid-area: gr_3;
+    background-image: url('https://img.freepik.com/free-photo/blue-smoke-collection-on-white-background_1112-1424.jpg?size=626&ext=jpg&ga=GA1.1.1676048053.1707253238&semt=ais');
+}
+.grid_3:hover{
+    transition: 1.5s;
+    background: linear-gradient( rgba(255, 255, 255, 0.8), rgba(252, 3, 57, 0.6) ), url('https://img.freepik.com/free-photo/blue-smoke-collection-on-white-background_1112-1424.jpg?size=626&ext=jpg&ga=GA1.1.1676048053.1707253238&semt=ais');
+}
+
+.grid_4{
+    transition: 1.5s;
+    grid-area: gr_4;
+    background-image: url('https://img.freepik.com/free-photo/blue-smoke-collection-on-white-background_1112-1790.jpg?size=626&ext=jpg&ga=GA1.1.1676048053.1707253238&semt=ais');
+}
+.grid_4:hover{
+    transition: 1.5s;
+    background: linear-gradient( rgba(255, 255, 255, 0.8), rgba(3, 252, 40, 0.6) ), url('https://img.freepik.com/free-photo/blue-smoke-collection-on-white-background_1112-1424.jpg?size=626&ext=jpg&ga=GA1.1.1676048053.1707253238&semt=ais');
+}
+
+.grid_5{
+    transition: 1.5s;
+    grid-area: gr_5;
+    background-image: url('https://img.freepik.com/free-photo/blue-smoke-collection-on-white-background_1112-1443.jpg?size=626&ext=jpg&ga=GA1.1.1676048053.1707253238&semt=ais');
+}
+.grid_5:hover{
+    transition: 1.5s;
+    background: linear-gradient( rgba(255, 255, 255, 0.8), rgba(252, 173, 3, 0.6) ), url('https://img.freepik.com/free-photo/blue-smoke-collection-on-white-background_1112-1424.jpg?size=626&ext=jpg&ga=GA1.1.1676048053.1707253238&semt=ais');
+}
+.grid_6{
+    transition: 1.5s;
+    grid-area: gr_6;
+    background-image: url('https://img.freepik.com/free-photo/blue-smoke-collection-on-white-background_1112-1479.jpg?size=626&ext=jpg&ga=GA1.1.1676048053.1707253238&semt=ais');
+ }
+.grid_6:hover{
+    transition: 1.5s;
+    background: linear-gradient( rgba(255, 255, 255, 0.8), rgba(3, 140, 252, 0.6) ), url('https://img.freepik.com/free-photo/blue-smoke-collection-on-white-background_1112-1424.jpg?size=626&ext=jpg&ga=GA1.1.1676048053.1707253238&semt=ais');
+}
+
+.grid_7{
+    transition: 1.5s;
+    grid-area: gr_7;
+    background-image: url('https://img.freepik.com/free-photo/white-smoke-collection-on-black-background_1112-1823.jpg?size=626&ext=jpg&ga=GA1.1.1676048053.1707253238&semt=ais');
+}
+.grid_7:hover{
+    transition: 1.5s;
+    background: linear-gradient( rgba(255, 255, 255, 0.8), rgba(3, 252, 244, 0.6) ), url('https://img.freepik.com/free-photo/blue-smoke-collection-on-white-background_1112-1424.jpg?size=626&ext=jpg&ga=GA1.1.1676048053.1707253238&semt=ais');
+}
+
+.services-buttons{
+    display: flex;
+    position: absolute;
+    top: -3vw;
+    height: 6vh;
+}
+.services-buttons a{
+    text-decoration: none;
+    color: #99A2AA;
+    font-size: 1.11vw;
+    font-weight: 700;
+    cursor: pointer;
+}
+.services-buttons a:hover{
+    color: black;
+}
+.services-buttons>div>div>img{
+    margin-right: 0.5vw;
+}
+.services-buttons>div {
+    margin-right: 1.5vw;
+    width: 18.75vw;
+    height: 5.56vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.694vw;
+    background: #FFF;
+    box-shadow: 0 0.208vw 2.43vw 0 rgba(95, 98, 102, 0.17);
+}
+.card{
+    /*border: 0.069vw solid;*/
+    border-radius: 0.694vw;
+    padding: 2vw;
+    height: 8vw;
+    /*text-shadow: 0.28vw 0.28vw 0.14vw rgba(255,255,255,0.6);*/
+    /*box-shadow: 0.694vw 0.694vw 0.347vw 0 rgba(14,47,75,0.75);*/
+    /*-webkit-box-shadow: 0.694vw 0.694vw 0.347vw 0 rgba(14,47,75,0.75);*/
+    /*-moz-box-shadow: 0.694vw 0.694vw 0.347vw 0 rgba(14,47,75,0.75);*/
+    transition: 1s;
+}
+.card a, .fin_text a{
+    color: #0E2F4B;
+    font-size: 1.11vw;
+    font-weight: 700;
+    text-decoration: none;
+}
+.card>h3>a {
+    font-size: 1.67vw;
+}
+/*для лінків (а), якщо потрібен білий колір тексту*/
+/*.white a{*/
+/*    color: white;*/
+/*    text-shadow: 0.28vw 0.28vw 0.14vw #0E2F4B;*/
+/*}*/
+.card>span>a{
+    font-size: 0.972vw;
+}
+.international_business_block, .find_index_block{
+    height: 45.83vw;
+    background-color: #042c4b;
+    display: flex;
+    align-items: center;
+
+}
+.blue_box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 48.61vw;
+    height: 27.08vw;
+}
+.blue_box>h2{
+    color: #f8f8f8;
+}
+.blue_box>p{
+    color: #99A2AA;
+    font-size: 1.11vw;
+}
+.international_business_block>div>div, .index_buttons>div>div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 21.18vw;
+    height: 5vw;
+    border-radius: 0.694vw;
+    background: #FDC13D;
+}
+.international_business_block a, .index_buttons a{
+    text-decoration: none;
+    color: #0E2F4B;
+    font-size: 1.39vw;
+    font-weight: 700;
+}
+.international_business_block h2, .find_index_block h2, .online_service h2{
+    /*text-shadow: 0.28vw 0.28vw 0.14vw cornflowerblue;*/
+}
+.financial_block{
+    height: 55.56vw;
+    padding-top: 6vw;
+}
+.fin_text{
+    width: 71.25vw;
+    height: 15.28vw;
+    background-color: #fdc13d;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-bottom: 6vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+.fin_cards{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.card:hover{
+    box-shadow: 1.11vw 1.458vw 1.458vw -0.347vw rgba(14,47,75,0.75);
+    -webkit-box-shadow: 1.11vw 1.458vw 1.458vw -0.347vw rgba(14,47,75,0.75);
+    -moz-box-shadow: 1.11vw 1.458vw 1.458vw -0.347vw rgba(14,47,75,0.75);
+    transition: 1s;
+}
+.fin_cards>div{
+    margin-right: 1vw;
+    width: 18vw;
+}
+.card_financial_1 {
+    background-image: url('https://img.freepik.com/premium-vector/abstract-background-in-rainbow-colors-background-waves_1021328-4421.jpg?size=626&ext=jpg&ga=GA1.1.1676048053.1707253238&semt=ais');
+}
+.card_financial_2 {
+    background-image: url('https://img.freepik.com/free-photo/blue-smoke-collection-on-white-background_1112-1422.jpg?size=626&ext=jpg&ga=GA1.1.1676048053.1707253238&semt=ais');
+}
+.card_financial_3 {
+    background-image: url('https://img.freepik.com/free-photo/blue-smoke-collection-on-white-background_1112-1767.jpg?size=626&ext=jpg&ga=GA1.1.1676048053.1707253238&semt=ais');
+}
+.index_buttons>div{
+    /*width: 75vw;*/
+    display: flex;
+    align-items: center;
+}
+.index_buttons>div>input{
+    margin-right: 2vw;
+}
+.img_date_article{
+    display: flex;
+    align-items: center;
+    margin-bottom: 2vw;
+}
+.img_date_article>div{
+    width: 23.20vw;
+    margin-left: 1vw;
+}
+.img_date_article span{
+    color: #99A2AA;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.972vw;
+}
+.news, .legal_entities_block{
+    margin-top: 4vw;
+}
+.news .card{
+    width: 35vw;
+    height: 17vw;
+    background-color: #fff;
+    border: none;
+    margin-bottom: 1vw;
+    transition: 0.5s;
+}
+.news .card:hover{
+    box-shadow: 0 0.208vw 2.43vw 0 rgba(95, 98, 102, 0.17);
+    transition: 1s;
+}
+.news_cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.news_cards .card{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+.news .card>span>a{
+    color: #0E2F4B;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.11vw;
+    font-weight: 400;
+}
+.mini-card{
+    display: flex;
+    align-items: center;
+    /*box-shadow: 0.694vw 0.694vw 0.347vw 0 rgba(14,47,75,0.75);*/
+    /*-webkit-box-shadow: 0.694vw 0.694vw 0.347vw 0 rgba(14,47,75,0.75);*/
+    padding-left: 2vw;
+    width: 23vw;
+    height: 6.39vw;
+    background-color: #fff;
+    box-shadow: 0.28vw 0.28vw 0.14vw rgba(255,255,255,0.6);
+    -moz-box-shadow: 0.694vw 0.694vw 0.347vw 0 rgba(14,47,75,0.75);
+}
+.mini-card a{
+    color: #99A2AA;
+    font-size: 1.39vw;
+    font-weight: 700;
+    transition: 0.5s;
+    text-decoration: none;
+    cursor: pointer;
+}
+.mini-card a:hover{
+    color: black;
+}
+.mini-card:hover{
+    box-shadow: 0 0.208vw 2.43vw 0 rgba(95, 98, 102, 0.17);
+    transition: 1s;
+}
+.legal_grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+    'el_1 el_2 el_3'
+    'el_4 el_5 el_6';
+    gap: 1.5vw;
+    padding-top: 1vw;
+    padding-bottom: 2vw;
+}
+.el_1{
+    grid-area: el_1;
+}
+.el_2{
+    grid-area: el_2;
+}
+.el_3{
+    grid-area: el_3;
+}
+.el_4{
+    grid-area: el_4;
+}
+.el_5{
+    grid-area: el_5;
+}
+.el_6{
+    grid-area: el_6;
+}
+.online_service{
+    height: 27.72vw;
+    background-color: #fdc13d;
+    color: white;
+    padding-top: 2vw;
+}
+.online_service span{
+    color: #0E2F4B;
+    font-size: 1.18vw;
+    font-weight: 700;
+    display: block;
+    margin-top: 2vw;
+    margin-bottom: 1vw;
+}
+.online_service img{
+    margin-right: 1vw;
+    width: 2.6vw;
+    height: 2.6vw;
+    z-index: 5;
+}
+footer{
+    height: 42.79vw;
+    background-color: #1d2023;
+    padding-top: 10vw;
+}
+.columns{
+    display: flex;
+    justify-content: space-between;
+}
+.google_apple_logos{
+    display: flex;
+    align-items: center;
+}
+.google_apple_logos .inscription{
+    color: #0E2F4B;
+    font-size: 0.694vw;
+    font-weight: 700;
+    position: absolute;
+    top: -1.6vw;
+    left: 4.5vw;
+}
+.google_apple_logos>div{
+    position: relative;
+}
+.footer_head_span{
+    color: #FFF;
+    font-size: 1.11vw;
+    font-weight: 700;
+    margin-bottom: 2vw;
+}
+.footer_column{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2vw;
+    width: 20%;
+}
+.footer_column>a{
+    color: #99A2AA;
+    font-size: 1.11vw;
+    text-decoration: none;
+    margin-bottom: 1vw;
+}
+/*--------------------------------img-------------------------------------*/
+.logo>img{
+    width: 12.92vw;
+    height: 3.472vw;
+}
+.services-buttons>div>div>svg{
+    width: 2.153vw;
+    height: 2.153vw;
+    margin-right: 1vw;
+}
+.yellow_color:hover{
+    fill: #fdc13d;
+}
+.img_date_article>img{
+    width: 6.94vw;
+    height: 6.94vw;
+}
+.google_apple_logos>div>a>img{
+    width: 11.806vw;
+    height: 3.472vw;
+}
+/*.up{*/
+/*    text-align: center;*/
+/*    width: 4vw;*/
+/*    height: 4vw;*/
+/*    position: fixed;*/
+/*    right: 4vw;*/
+/*    bottom: 6vw;*/
+/*    font-size: 3vw;*/
+/*    border: 0.05vw solid blue;*/
+/*    border-radius: 2vw;*/
+/*    box-shadow: 0.694vw 0.694vw 0.347vw 0 rgba(21,140,186,0.75);*/
+/*    -webkit-box-shadow: 0.694vw 0.694vw 0.347vw 0 rgba(21,140,186,0.75);*/
+/*    -moz-box-shadow: 0.694vw 0.694vw 0.347vw 0 rgba(21,140,186,0.75);*/
+/*}*/
+/*.up a{*/
+/*    text-decoration: none;*/
+/*    color: blue;*/
+/*}*/
