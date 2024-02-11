@@ -3,12 +3,14 @@
     padding: 0;
     font-family: 'Rubik', sans-serif;
 }
-header, .tab_panel, .financial_block, .news{
+.wrapper, header, .tab_panel, .financial_block, .news,
+.legal_entities_block{
     background-color: #F8F8F8;
 }
 header, .tab_panel, .section_services-block,
 .international_business_block, .financial_block,
-.find_index_block, .news{
+.find_index_block, .news, .legal_entities_block,
+.online_service, footer{
     padding-left: 9.375vw;
     padding-right: 9.375vw;
 }
@@ -30,10 +32,9 @@ p{
 
 }
 h2{ font-size: 48px;
-     font-style: normal;
-     font-weight: 700;
-     margin-bottom: 2vw;
-
+    font-style: normal;
+    font-weight: 700;
+    margin-bottom: 2vw;
     text-shadow: 4px 4px 8px rgba(0,0,0,0.6);
 }
 nav>a{
@@ -210,7 +211,7 @@ input:focus{
     font-size: 20px;
     font-weight: 700;
 }
-.international_business_block h2, .find_index_block h2{
+.international_business_block h2, .find_index_block h2, .online_service h2{
     text-shadow: 4px 4px 2px cornflowerblue;
 }
 .financial_block{
@@ -262,16 +263,20 @@ input:focus{
     width: 23.20vw;
     margin-left: 1vw;
 }
-.news{
-    margin-top: 2vw;
+.img_date_article span{
+    color: #99A2AA;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+.news, .legal_entities_block{
+    margin-top: 4vw;
 }
 .news .card{
     width: 35vw;
-    height: 16vw;
+    height: 13vw;
     background-color: #fff;
     border: none;
     margin-bottom: 1vw;
-
 }
 .news_cards{
     display: flex;
@@ -281,7 +286,109 @@ input:focus{
 }
 .news .card>span>a{
     color: #0E2F4B;
-    font-family: "Open Sans";
+    font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     font-weight: 400;
+}
+.mini-card{
+    display: flex;
+    align-items: center;
+    padding-left: 2vw;
+    width: 23vw;
+    height: 6.39vw;
+    background-color: #fff;
+    shadow: 4px 4px 2px rgba(255,255,255,0.6);
+    box-shadow: 10px 10px 5px 0px rgba(14,47,75,0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(14,47,75,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(14,47,75,0.75);
+    color: #99A2AA;
+    font-size: 20px;
+    font-weight: 700;
+}
+.legal_grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+    'el_1 el_2 el_3'
+    'el_4 el_5 el_6';
+    gap: 1.5vw;
+    padding-top: 1vw;
+    padding-bottom: 2vw;
+}
+.el_1{
+    grid-area: el_1;
+}
+.el_2{
+    grid-area: el_2;
+}
+.el_3{
+    grid-area: el_3;
+}
+.el_4{
+    grid-area: el_4;
+}
+.el_5{
+    grid-area: el_5;
+}
+.el_6{
+    grid-area: el_6;
+}
+.online_service{
+    height: 27.72vw;
+    background-color: #fdc13d;
+    color: white;
+    padding-top: 2vw;
+}
+.online_service span{
+    color: #0E2F4B;
+    font-size: 17px;
+    font-weight: 700;
+    display: block;
+    margin-top: 2vw;
+    margin-bottom: 1vw;
+}
+.online_service img{
+    margin-right: 1vw;
+}
+footer{
+    height: 42.79vw;
+    background-color: #1d2023;
+    padding-top: 10vw;
+}
+.columns{
+    display: flex;
+    justify-content: space-between;
+}
+.google_apple_logos{
+    display: flex;
+    align-items: center;
+}
+.google_apple_logos .inscription{
+    color: #0E2F4B;
+    font-size: 10px;
+    font-weight: 700;
+    position: absolute;
+    top: -1.6vw;
+    left: 3.7vw;
+}
+.google_apple_logos>div{
+    position: relative;
+}
+.footer_head_span{
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 2vw;
+}
+.footer_column{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2vw;
+    width: 20%;
+}
+.footer_column>a{
+    color: #99A2AA;
+    font-size: 16px;
+    text-decoration: none;
+    margin-bottom: 1vw;
 }
