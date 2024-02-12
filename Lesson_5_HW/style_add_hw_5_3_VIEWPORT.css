@@ -335,13 +335,28 @@ input:focus{
     width: 18vw;
 }
 .card_financial_1 {
+    transition: 1.5s;
     background-image: url('https://img.freepik.com/premium-vector/abstract-background-in-rainbow-colors-background-waves_1021328-4421.jpg?size=626&ext=jpg&ga=GA1.1.1676048053.1707253238&semt=ais');
 }
+.card_financial_1:hover{
+    transition: 1.5s;
+    background: linear-gradient( rgba(255, 255, 255, 0.8), rgba(235, 52, 174, 0.6) ), url('https://img.freepik.com/premium-vector/abstract-background-in-rainbow-colors-background-waves_1021328-4421.jpg?size=626&ext=jpg&ga=GA1.1.1676048053.1707253238&semt=ais');
+}
 .card_financial_2 {
+    transition: 1.5s;
     background-image: url('https://img.freepik.com/free-photo/blue-smoke-collection-on-white-background_1112-1422.jpg?size=626&ext=jpg&ga=GA1.1.1676048053.1707253238&semt=ais');
 }
+.card_financial_2:hover{
+    transition: 1.5s;
+    background: linear-gradient( rgba(255, 255, 255, 0.8), rgba(52, 235, 201, 0.6) ), url('https://img.freepik.com/free-photo/blue-smoke-collection-on-white-background_1112-1422.jpg?size=626&ext=jpg&ga=GA1.1.1676048053.1707253238&semt=ais');
+}
 .card_financial_3 {
+    transition: 1.5s;
     background-image: url('https://img.freepik.com/free-photo/blue-smoke-collection-on-white-background_1112-1767.jpg?size=626&ext=jpg&ga=GA1.1.1676048053.1707253238&semt=ais');
+}
+.card_financial_3:hover{
+    transition: 1.5s;
+    background: linear-gradient( rgba(255, 255, 255, 0.8), rgba(201, 52, 235, 0.6) ), url('https://img.freepik.com/free-photo/blue-smoke-collection-on-white-background_1112-1767.jpg?size=626&ext=jpg&ga=GA1.1.1676048053.1707253238&semt=ais');
 }
 .index_buttons>div{
     /*width: 75vw;*/
