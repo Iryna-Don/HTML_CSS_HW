@@ -1,0 +1,26 @@
+@media screen and (min-width: 300px) and (max-width: 500px) {
+    /*section {*/
+    /*    grid-template-columns: repeat(3, 1fr);*/
+    /*    grid-template-rows: repeat(4, 23.5vh);*/
+    /*}*/
+    /*div:nth-child(1) {*/
+    /*    grid-column: 1 / 4;*/
+    /*}*/
+    /*div:nth-child(2) {*/
+    /*    grid-column: 1 / 4;*/
+    /*}*/
+    /*div:nth-child(6) {*/
+    /*    grid-column: 1 / 4;*/
+    /*    grid-row: 4 / 5;*/
+    /*}*/
+    /*    ---------------GRID-AREA-------------------------*/
+    section {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 23vh);
+        grid-template-areas:
+            'first_block first_block  first_block'
+            'second_block second_block second_block'
+            'third_block fourth_block fifth_block'
+            'sixth_block sixth_block sixth_block';
+    }
+}

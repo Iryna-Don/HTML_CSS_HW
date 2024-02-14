@@ -1,0 +1,20 @@
+@media screen and (min-width: 300px) and (max-width: 500px) {
+    /*section {*/
+    /*    grid-template-rows: repeat(3, 32vh);*/
+    /*}*/
+    /*div:nth-child(2) {*/
+    /*    grid-column: 1 / 5;*/
+    /*}*/
+    /*div:nth-child(3){*/
+    /*    grid-column: 1 / 5;*/
+    /*}*/
+    /*    ---------------GRID-AREA-------------------------*/
+    section {
+        grid-template-areas:
+    'first_block first_block first_block first_block'
+    'second_block second_block second_block second_block'
+    'third_block third_block third_block third_block';
+        grid-template-rows: 32vh 32vh 32vh;
+    }
+
+}
