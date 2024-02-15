@@ -1,0 +1,232 @@
+*{
+    margin: 0;
+}
+body{
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+}
+.wrapper{
+    padding: 0 8.33vw;
+    background-color: #19191b;
+    color: rgba(255, 255, 255, 0.70);
+}
+header{
+    height: 7.431vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.6vw;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo>img{
+    width: 2.78vw;
+    height: 2.78vw;
+    margin-right: 0.56vw;
+}
+.logo>span{
+    color: #FFF;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.94vw;
+    font-weight: 700;
+    line-height: 140%; /* 39.2px */
+}
+nav{
+    width: 27.57vw;
+    height: 1.53vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav>a{
+    color: rgba(255, 255, 255, 0.70);
+    text-align: right;
+    font-size: 1.25vw;
+    text-decoration: none;
+}
+nav>a:hover{
+    color: #5454D4;
+}
+.contact{
+    width: 10.90vw;
+    height: 3.75vw;
+    border-radius: 0.35vw;
+    background-color: #000000;
+    border: 1px solid #FFF;
+    backdrop-filter: blur(0.069vw);
+    color: #ffffff;
+    font-size: 1.11vw;
+    letter-spacing: -0.0347vw;
+    cursor: pointer;
+}
+.contact:hover{
+    background-color: #f9a722;
+    border-color: #5454d4;
+    color: #000000;
+}
+.section_1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10.49vw;
+}
+.content{
+    width: 40.42vw;
+}
+h1{
+    color: #FFF;
+    font-size: 5.56vw;
+    line-height: 5.83vw; /* 105% */
+    padding-bottom: 1.67vw;
+}
+p{
+    color: rgba(255, 255, 255, 0.70);
+    font-size: 1.46vw;
+    line-height: 2.71vw; /* 185.714% */
+    letter-spacing: -0.657px;
+    width: 37.22vw;
+    padding-bottom: 3.47vw;
+}
+.content>button, .section_5>button {
+    width: 13.89vw;
+    height: 4.17vw;
+    border-radius: 0.28vw;
+    background: #5454D4;
+    color: #FFF;
+    font-size: 1.39vw;
+    font-weight: 700;
+    cursor: pointer;
+}
+.img>img{
+    width: 45.56vw;
+    height: 49.51vw;
+    background:lightgray 50% / cover no-repeat;
+}
+
+h2{
+    color: #FFF;
+    font-size: 4.17vw;
+    line-height: 4.86vw; /* 116.667% */
+}
+.choice{
+    display: flex;
+    /*justify-content: space-between;*/
+    padding-bottom: 3.47vw;
+}
+.choice>h2{
+    width: 40.83vw;
+    height: 9.72vw;
+}
+.choice>p{
+    width: 40.83vw;
+}
+.choice-img>img{
+    width: 83.33vw;
+    height: 46.53vw;
+
+}
+.section_3{
+    padding-top: 10.42vw;
+}
+.section_3_name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section_3_name>h2{
+    width: 48.26vw;
+    height: 9.72vw;
+    text-align: center;
+}
+.grid{
+    padding-top: 6.81vw;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 7.569vw;
+    grid-row-gap: 8.40vw;
+}
+.grid-card{
+    width: 20.76vw;
+    height: 14.10vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h3{
+    color: #FFF;
+    font-size: 1.94vw;
+    font-weight: 600;
+    padding-bottom: 1.67vw;
+    padding-top: 1.39vw;
+}
+.grid-card>p{
+    width: 20.76vw;
+    text-align: center;
+    font-size: 1.39vw;
+    line-height: 1.94vw; /* 140% */
+    letter-spacing: -0.5px;
+}
+.grid-basic{
+    position: relative;
+}
+.oval{
+    width: 4.79vw;
+    height: 4.79vw;
+}
+.grid-logo{
+    width: 2.2vw;
+    height: 2.2vw;
+}
+.grid-logo{
+    position: absolute;
+    top: 1.3194vw;
+    left: 1.3194vw;
+}
+.section_4>h2{
+    color: #FFF;
+    font-size: 4.03vw;
+    font-weight: 800;
+    padding-top: 13.82vw;
+    padding-bottom: 12.83vw;
+
+}
+.section_4>div>img{
+    width: 23.33vw;
+    height: 17.57vw;
+    margin: 1.67vw;
+}
+.portfolio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.section_5{
+    padding-top: 32.71vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.section_5>h2{
+    width: 57.36vw;
+    height: 10vw;
+}
+footer{
+    padding-top: 12.15vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 13.19vw;
+}
+footer>span{
+    font-size: 1.11vw;
+    line-height: 2.64vw;
+    letter-spacing: -0.03472vw;
+}
+.hidden{
+    display: none;
+}
