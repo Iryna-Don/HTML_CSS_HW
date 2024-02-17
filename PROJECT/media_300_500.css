@@ -141,18 +141,15 @@
         font-size: 9.6vw;
         line-height: 150%;
     }
-
     .pic-2, .pic-3 {
         display: none;
     }
-
     .section_4 > div > img {
         width: 100%;
         height: 65.6vw;
     }
-
     /*----------------------section_5---------------*/
-    .section_5{
+        .section_5{
         flex-direction: column;
         align-items: normal;
         justify-content: normal;
