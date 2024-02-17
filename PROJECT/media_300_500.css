@@ -49,6 +49,9 @@
         height: 11.73vw;
         font-size: 4.29vw;
     }
+    .content>button:hover, .section_5>button:hover {
+        transform: scale(1);
+    }
 
     .img > img {
         width: 99.73vw;

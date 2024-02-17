@@ -114,7 +114,21 @@ p{
     font-size: 1.39vw;
     font-weight: 700;
     cursor: pointer;
+    transition: 1s;
 }
+.content>button:hover, .section_5>button:hover{
+    transform: scale(1.2);
+    transition: 1s;
+    animation: background 3s infinite alternate;
+
+}
+@keyframes background {
+    50% {
+        background: #5454D4;
+        box-shadow: 0 -13.89vw 6.94vw -6.94vw #fcc860 inset;
+    }
+}
+
 /*розмір малюнку макет-width: 656px;
 height: 713px; */
 .img>img{
