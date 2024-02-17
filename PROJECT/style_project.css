@@ -1,5 +1,6 @@
 *{
     margin: 0;
+    padding: 0;
 }
 body{
     font-family: "Lato", sans-serif;
@@ -8,14 +9,23 @@ body{
 .wrapper{
     padding: 0 8.33vw;
     background-color: #19191b;
-    color: rgba(255, 255, 255, 0.70);
 }
+section {
+    width: 83.34vw;
+}
+h2{
+    color: #FFF;
+    font-size: 4.17vw;
+    line-height: 4.86vw;
+    font-weight: 400;
+}
+
+/*------------------------header-------------------*/
 header{
     height: 7.431vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 1.6vw;
 }
 .logo{
     display: flex;
@@ -63,15 +73,18 @@ nav>a:hover{
     cursor: pointer;
 }
 .contact:hover{
-    background-color: #f9a722;
+    background-color: #5454d4;
     border-color: #5454d4;
-    color: #000000;
+    color: white;
 }
+/*---------------------section_1----------------------------*/
 .section_1{
+    background: radial-gradient(50% 50% at 50% 50%, #353550 0%, rgba(25, 25, 27, 0.00) 100%);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 10.49vw;
+    width: 83.34vw;
+    height: 60vw;
 }
 .content{
     width: 40.42vw;
@@ -79,13 +92,15 @@ nav>a:hover{
 h1{
     color: #FFF;
     font-size: 5.56vw;
-    line-height: 5.83vw; /* 105% */
+    line-height: 5.83vw;
     padding-bottom: 1.67vw;
+    font-style: normal;
+    font-weight: 400;
 }
 p{
     color: rgba(255, 255, 255, 0.70);
     font-size: 1.46vw;
-    line-height: 2.71vw; /* 185.714% */
+    line-height: 2.71vw;
     letter-spacing: -0.657px;
     width: 37.22vw;
     padding-bottom: 3.47vw;
@@ -100,20 +115,25 @@ p{
     font-weight: 700;
     cursor: pointer;
 }
+/*розмір малюнку макет-width: 656px;
+height: 713px; */
 .img>img{
     width: 45.56vw;
     height: 49.51vw;
-    background:lightgray 50% / cover no-repeat;
+    transition: 0.5s;
 }
-
-h2{
-    color: #FFF;
-    font-size: 4.17vw;
-    line-height: 4.86vw; /* 116.667% */
+.img>img:hover{
+    transition: 0.5s;
+    transform: scale(1.2);
+}
+/*---------------------section_2-------------------------------*/
+.section_2{
+    margin-top: 3vw;
+    height: 63vw;
 }
 .choice{
+    justify-content: space-between;
     display: flex;
-    /*justify-content: space-between;*/
     padding-bottom: 3.47vw;
 }
 .choice>h2{
@@ -123,14 +143,17 @@ h2{
 .choice>p{
     width: 40.83vw;
 }
-.choice-img>img{
+.choice-img>video{
     width: 83.33vw;
     height: 46.53vw;
-
 }
+/*-------------------------section_3----------------*/
 .section_3{
-    padding-top: 10.42vw;
+    background: radial-gradient(50% 50% at 50% 50%, #353550 0%, rgba(25, 25, 27, 0.00) 100%);
+    margin-top: 6vw;
+    height: 57.55733vw;
 }
+
 .section_3_name{
     display: flex;
     justify-content: center;
@@ -140,14 +163,14 @@ h2{
     width: 48.26vw;
     height: 9.72vw;
     text-align: center;
+    padding-bottom: 4vw;
 }
 .grid{
-    padding-top: 6.81vw;
+    padding-top: 2vw;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 7.569vw;
-    grid-row-gap: 8.40vw;
+    grid-gap: 4vw;
 }
 .grid-card{
     width: 20.76vw;
@@ -155,7 +178,15 @@ h2{
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 2vw;
 }
+.grid-card:hover{
+    color: black;
+    border-radius: 1.042vw;
+    box-shadow: 0.76vw 0.76vw 2.36vw 0 rgba(84,84,212,0.75);
+    -webkit-box-shadow: 0.76vw 0.76vw 2.36vw 0 rgba(84,84,212,0.75);
+    -moz-box-shadow: 0.76vw 0.76vw 2.36vw 0 rgba(84,84,212,0.75);}
+
 h3{
     color: #FFF;
     font-size: 1.94vw;
@@ -168,7 +199,7 @@ h3{
     text-align: center;
     font-size: 1.39vw;
     line-height: 1.94vw; /* 140% */
-    letter-spacing: -0.5px;
+    letter-spacing: -0.034vw;
 }
 .grid-basic{
     position: relative;
@@ -186,13 +217,16 @@ h3{
     top: 1.3194vw;
     left: 1.3194vw;
 }
+/*-----------------------section_4-----------------*/
+.section_4{
+    margin-top: 6vw;
+    height: 52vw;
+}
 .section_4>h2{
     color: #FFF;
     font-size: 4.03vw;
-    font-weight: 800;
-    padding-top: 13.82vw;
-    padding-bottom: 12.83vw;
-
+    font-weight: 700;
+    padding-bottom: 8vw;
 }
 .section_4>div>img{
     width: 23.33vw;
@@ -201,12 +235,13 @@ h3{
 }
 .portfolio{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
 }
+/*----------------------section_5---------------*/
 .section_5{
-    padding-top: 32.71vw;
+    height: 30vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -214,7 +249,10 @@ h3{
 .section_5>h2{
     width: 57.36vw;
     height: 10vw;
+    color: #FFF;
+    font-size: 4.17vw;
 }
+/*----------------------footer----------------------*/
 footer{
     padding-top: 12.15vw;
     display: flex;
@@ -223,10 +261,12 @@ footer{
     height: 13.19vw;
 }
 footer>span{
+    color: rgba(255, 255, 255, 0.70);
     font-size: 1.11vw;
     line-height: 2.64vw;
     letter-spacing: -0.03472vw;
 }
 .hidden{
+    flex-direction: column;
     display: none;
 }
